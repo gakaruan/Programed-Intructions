@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intruksi Terporam Tipe Percabangan MAPEL TIK</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #b7ccce;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            text-transform: capitalize;
+        }
+
+        ol {
+            padding-left: 23px;
+            text-transform: capitalize;
+        }
+
+        dl {
+            padding-left: 15px;
+            text-transform: capitalize;
+        }
+
+        li {
+            list-style: inherit;
+            padding-top: 5px;
+            position: relative;
+        }
+
+        p {
+            text-transform: capitalize;
+        }
+
+        .credit-box {
+            background-color: #f3e4d9;
+            border: 2px solid #ffc35b;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 40px auto;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+            position: relative;
+        }
+
+        .credit-box::before {
+            content: "📘";
+            font-size: 32px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: slideUp 0.8s ease-out;
+        }
+
+
+        .credit-box h4 {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .credit-box p {
+            margin: 5px 0;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+        .divider {
+            width: 60%;
+            height: 2px;
+            background-color: #bbb;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .judul-box {
+            background-color: #ffffff;
+            border: 5px solid #ffc35b;
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 40px auto;
+            font-family: 'Segoe UI', sans-serif;
+            animation: slideDown 1s linear;
+        }
+
+        .judul-box h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0;
+            color: #ffb637;
+        }
+
+
+        .judul-box h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-150px);
+
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @keyframes midanim {
+
+            from {
+                transform: rotatey(90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotatey(0);
+            }
+
+        }
+
+
+
+
+
+        .container {
+            max-width: 1050px;
+            min-width: 400px;
+            border: 2px solid #90caff;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .container2 {
+            max-width: 600px;
+            margin: 50px auto;
+            border: 2px solid #90caff;
+            background: #e3d2c3;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(45, 43, 43, 0.1);
+            animation: midanim 1s ease-out;
+        }
+
+        @media (max-width: 800px) {
+            .section-box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-box-item {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .section-box {
+            display: flex;
+            background: #e3f2fd;
+            justify-content: space-evenly;
+            gap: 20px;
+            border-radius: 25px;
+            border: 2px solid #90caff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            animation: slideUp 0.6s ease-out;
+        }
+
+
+        .waktu-frame {
+            background-color: #f0f8ff;
+            border-left: 5px solid #1e90ff;
+            padding: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .section-box-item {
+            max-width: 350px;
+            min-height: 250px;
+            min-height: 200px;
+            justify-content: center;
+            align-items: center;
+            background: #e3d2c3;
+            text-align: center;
+            border-radius: 25px;
+            border: 1px solid #ffa500;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            animation: midanim 2s ease-out;
+        }
+
+        .section-box3 {
+            background: #e3f2fd;
+            text-align: justify;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            border-radius: 25px;
+            border: 2px solid #90caff;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .section-box-4 {
+            display: flex;
+            background: #e3f2fd;
+            justify-content: space-evenly;
+            border-radius: 25px;
+            padding: 2px;
+            margin-bottom: 2px;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        .informasi-title,
+        .question-title {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            animation: fadeIn 1s ease-in-out
+        }
+
+        .informasi-text,
+        .question-text {
+            font-size: 15px;
+            margin-bottom: 10px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .choices label {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 5px;
+            background: #f0f8ff;
+            padding: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+
+            border: #f7d7a1 1px solid ;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .choices input[type="radio"] {
+            transform: scale(1.2);
+            font-size: 15px;
+            margin-right: 10px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+
+        .btn {
+            display: block;
+            min-height: 45px;
+            min-width: 45px;
+            margin: 15px auto 0 auto;
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #06a001;
+        }
+
+        .timer {
+            border: 2px solid #90caff;
+            font-size: 13px;
+            text-align: center;
+            align-content: center;
+            border-radius: 25px;
+            padding: 5px 10px;
+            margin: 2px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .feedback {
+            margin-top: 15px;
+            background: #fff8dc;
+            border-left: 5px solid #ffa500;
+            padding: 10px 24px;
+            border-radius: 10px;
+            margin: 10px 0;
+            text-align: justify;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .informasi-container.correct {
+            background: #def2e4;
+            border-left: 15px solid #2ecc71;
+            padding: 10px 24px;
+            border-radius: 10px;
+            margin: 10px 0;
+            text-align: justify;
+            animation: fadeIn 1s ease-in-out
+        }
+
+        .informasi-container {
+            background: #e8f4ff;
+            border: 2px solid #90caff;
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-size-adjust: small;
+            text-align: justify;
+            animation: fadeIn 1s ease-in-out
+        }
+
+        .pertanyaan-container {
+            background: #fff6ea;
+            border: 2px solid #e3d2c3;
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: justify;
+            animation: fadeIn 1s ease-in-out
+        }
+
+        .alasan-container {
+            background: #fff4f4;
+            border: 2px dashed #ffa500;
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: justify;
+            animation: fadeIn 1s ease-in-out
+        }
+
+        footer {
+            background-color: #d20000;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <div class="container" id="containerAwal">
+        <div class="judul-box">
+
+            <h1>PROGRAMED INTRUCTIONS</h1>
+            <h2>Branching Type</h2>
+            <div class="divider"></div>
+            <h2>INFORMATIKA <br> KELAS IX</h2>
+            <h1> KEAMANAN DATA DAN INFORMASI </h1>
+
+        </div>
+        <center>
+            <h2> PEMBUKAAN </h2>
+        </center>
+        <div class="section-box3">
+            <center>
+                <H3 style="color: #ffa500;">Selamat Datang di Pembelajaran Mandiri <br> Keamanan Data dan Informasi</H3>
+            </center><br>
+            <p>
+                Dalam dunia digital saat ini,menjaga data pribadi dan informasi penting menjadi hal yang sangat
+                krusial. Melalui program ini, kamu akan belajar Mandiri mengenai konsep dasar data dan informasi,
+                Mengenali
+                ancaman
+                terhadap keamanan data dan informasi, serta metode dan alat yang digunakan untuk menghadapai ancaman
+                keamanan data dan informasi.<br><br>
+
+                Program ini menggunakan model Programmed Instruction tipe branching. Maka Kamu secara pribadi akan
+                diarahkan
+                untuk belajar
+                menggunakan frame. berbeda dengan tipe linier yang tiap frame tersusun menjadi satu jalur yang sama,
+                pada
+                program tipe ini, setiap frame memiliki cabang sesuai dengan pilihan jawabanmu. Jadi pilihan jawabanmu
+                akan
+                menentukan Jalur belajar serta seberapa banyak frame yang akan kamu kerjakan.
+            </p>
+        </div>
+        <center>
+            <h2> TUJUAN PEMBELAJARAN </h2>
+        </center>
+        <div class="section-box3">
+            <P>
+                Tujuan dari programmed instruction (instruksi terprogram) ini adalah untuk membantu kamu belajar secara
+                mandiri
+                dan efektif, sesuai dengan pemahaman dan dengan kecepatan belajarmu sendiri, dan dengan penguatan
+                langsung setelah setiap langkah. <br><br>
+                Selain itu Tujuan Pembelajaran yang harus kamu capai dalam pembelajaran ini adalah:
+            <ol>
+                <li>Memahami konsep dasar data dan Informasi</li>
+                <li>Memahami Ancaman terhadap keamanan data dan informasi</li>
+                <li>Memahami metode dan alat untuk melindungi keamanan data dan informasi</li>
+            </ol>
+            </p>
+        </div>
+
+        <center>
+            <h2> PETUNJUK PEMBELAJARAN </h2>
+        </center>
+        <div class="section-box3">
+            <h3>Petunjuk Pengerjaan</h3>
+            <p> Secara Garis besar Tahapan yang harus kamu lakukan adalah : </p>
+            <ol>
+                <li><b>Baca dan Pahami Informasi Yang Diberikan pada frame </b> </li>
+                <dl>Setiap frame menyampaikan informasi yang berbeda namun semuanya tetap membahas materi keamanan data
+                    dan infromasi. </dl>
+                <li><b>Perhatikan Pertanyaannya</b> </li>
+                <dl>Tiap pertanyaan akan sesuai dengan informasi yang sudah diberikan sebelumnya </dl>
+                <li><b>Pilihlah Jawaban Yang Paling Tepat</b></li>
+                <dl>Tiap Frame terhubung dengan Frame lain secara bercabang dan jawaban yang kamu kamu pilih pada frame
+                    yang sedang kamu kerjakan akan menetukan waktu dan frame mana yang berikutnya akan kamu kerjakan.
+                </dl>
+            </ol>
+            <p>Jika Kamu Sudah Siap Silahkan Klik Tombol Mulai dibawah </p>
+
+            <br>
+            <h3> Informasi Tambahan </h3>
+            <ul>
+                <li><strong>Ada Timer Yang Mengukur Waktu Saat Kamu Mencapai Pilihan Frame Yang Benar</strong></li>
+                <dl> Tenang saja, Kamu tetap belajar sesuai kecepatanmu. Timer Ini Hanya Untuk Mengecek Waktu Yang Kamu
+                    Butuhkann Untuk Menyelesaikan Suatu Frame dan Juga Bahan Evaluasi Terkait Kesulitan Yang Kamu Alami
+                    Dalam Menyelesaikan Suatu Materi.</dl>
+                <li><strong>Ada Point Kesalahan Setiap Memilih Frame Yang Salah Atau Kurang Tepat</strong></li>
+                <dl> Dalam Program Ini, Kesalahan adalah bagian dari belajar. Hal Ini Karena Saat Pilihamu Salah Kamu
+                    Diarahkan Ke Frame Remedial Yang Menjelaskan Informasi Mengenai Mengapa Pilihanmu Salah. Poin
+                    Kesalahan Digunakan Untuk Mengecek Berapa Banyak Frame Remedial Yang Sudah Kamu Lalui. </dl>
+            </ul>
+            <p></p>
+            Menyelesaikannya dengan asal asalan mungkin saja akan membuat waktu belajarmu jadi lebih cepat, tapi
+            jawabanmu akan kelihatan banyak salahnya. Selain itu kamu tidak akan mendapat manfaat dari program ini.
+            <br><br>
+            <center> <strong> JADI KERJAKAN PROGRAM INI <br>DENGAN SUNGGUH - SUNGGUH YA! </strong> </center><br>
+        </div>
+
+        <center><button class="btn" style="min-width: 275px;font-size: 25px;border:2px solid #ffa500;"
+                onclick="startPI()"> Mulai </button></center>
+
+        <div class="credit-box">
+            <h4>Dibuat oleh:</h4>
+            <p><strong>Ilham Nawawi</strong> (2306307)</p>
+            <div class="divider"></div>
+            <p>Dibuat untuk Tugas Akhir Mata Kuliah</p>
+            <p><strong>Pengembangan Bahan Ajar</strong></p>
+            <p>Tahun Ajaran 2024/2025</p>
+        </div>
+
+
+
+    </div>
+
+    <div class="container" id="containerUtama" style="display:none;">
+
+        <div style="margin-bottom: 20px;">
+            <h3 style="color: #ffa500;">Progress Bar</h3>
+            <div id="progressContainer"
+                style="width: 100%; height: 20px; background-color: #e0e0e0; border-radius: 8px; overflow: hidden;">
+                <div id="progressBar"
+                    style="height: 100%; width: 0%; background-color: #4caf50; transition: width 0.9s ease;"></div>
+            </div>
+        </div>
+
+        <div class="section-box-4">
+            <div class="timer"> 🕛 Waktu Belajarmu: <br> <span id="timer"> 00:00 </span></div>
+            <div class="timer"> ✅ Jawaban Benar: <br> <span id="correctCount">0</span></div>
+            <div class="timer"> ❌ Jawaban Salah: <br> <span id="wrongCount">0</span></div>
+        </div>
+        <br>
+        <div id="app"></div>
+    </div>
+
+    <script>
+        let timerInterval;
+        let frameStartTime = 0;
+        let frameTimes = {};
+        let currentFrameId = null;
+        let totalSeconds = 0;
+        let correctCount = 0;
+        let wrongCount = 0;
+
+        function startPI() {
+            document.getElementById('containerAwal').style.display = 'none';
+            document.getElementById('containerUtama').style.display = 'block';
+            renderFrame('frame_1');
+
+            timerInterval = setInterval(() => {
+                totalSeconds++;
+                const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+                const seconds = String(totalSeconds % 60).padStart(2, '0');
+                document.getElementById("timer").textContent = `${minutes}:${seconds}`;
+            }, 1000);
+        }
+
+
+        const soal = [
+            {
+                id: "frame_1",
+                informasi: ` 
+                FRAME   1
+                <center><p><strong>INFORMASI</strong></center>
+                <center></p><strong>Konsep Dasar Data dan Informasi </strong></center>
+                    <p> </p>
+                    <p> Sebelum membahas lebih jauh mengenai keamanan data dan informasi, kita akan membahas dulu mengenai konsep dasar dari data dan informasi itu sendiri.
+                        Dalam Dunia Informatika maupun dalam Kehidupan sehari- hari, kita pasti pernah mendengar dan menggunakan istilah tersebut. Tapi Kebanyakan dari kita mungkin menggunakan 
+                        istilah tersebut secara asal dan mengangap keduanya merupakan hal yang sama. padahal data dan informasi merupakan 2 hal yang memiiki arti berbeda. </p>
+                    <p> </p>
+                    <p> Secara sederhana Data dapat diartikan sebagai  fakta-fakta mentah yang belum diolah dan belum memiliki makna secara langsung. 
+                        Data dapat berupa angka, teks, simbol, atau hal lainya yang belum memberikan arti tertentu. Sementara, informasi adalah hasil dari pemrosesan data. 
+                        Pemrosesan data sendiri dapat berupa Penyusunan, Pengurutan, Penafsiran, Dikaitkan Dan/Atau Sebagainya Hingga memiliki makna dan nilai guna. Dari penjelasan kedua
+                        hal tersebut dapat dikatakan juga bahwa Informasi adalah sesuatu yang bersumber dari data dan data adalah sesuatu yang mendasari Informasi. 
+                        Baik data dan Informasi memiliki kaitan satu sama lain.</p>
+
+                        <p>Data Dan Informasi merupakan hal yang krusial dalam Pengambilan Keputusan.</p>
+                    
+                 <center></center>
+                    `,
+                pertanyaan: "",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_1e" }
+                }
+            },
+            {
+                id: "frame_1k",
+                informasi: "<center><p><strong>KAMU BENAR</strong></p></center>",
+                pertanyaan: "<p>Informasi adalah hasil pemrosesan data, dari Data Daftar Nilai UTS di kelas B Setelah dilakukan proses pengurutan nilai, bisa didapatkan informasi bahwa Oji adalah siswak kelas B dengan nilai UTS Matematika tertinggi</p> .",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_2" }
+                }
+            },
+            {
+                id: "frame_1b",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></center>",
+                pertanyaan: `
+                
+                <p>Jawaban Yang Kamu Pilih : <center>         
+                <br> <strong>Data       :</strong> Daftar Berat Badan Siswa Kelas A<br> 
+                <strong>Informasi :</strong> Daftar Tinggi Badan Siswa Kelas A<br></center> <br>
+                Walaupun Pasangan Data dan Informasinya tentang Siswa Kelas A tapi Data  Berat badan tidak akan memberikan informasi tinggi badan.
+                Pilihan pasanagan data dan informasi yang kamu pilih ini lebih tepat disebut pasangan
+                data saja karena keduanya adalah sumber data yang dapat menjadi sumber informasi terkait Siswa Kelas A  </p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_1" }
+                }
+            },
+            {
+                id: "frame_1c",
+                informasi: "<center><p><strong> SALAH </strong></p></center>",
+                pertanyaan: `
+                <p>Jawaban Yang Kamu Pilih : <center>         
+                <br> <strong>Data       :</strong> Daftar Harga Sayuran<br> 
+                <strong>Informasi       :</strong> Harga Susu Menjadi Murah karena overproduksi di Peternakan <br></center> <br>
+                Ingat! Informasi itu adalah hasil Pemrosesan Data, Data Harga Sayuran walaupun diproses dengan panjang Tidak Akan Memberikan informasi Apapun Terkait Harga Susu</p> `,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_1" }
+                }
+            },
+            {
+                id: "frame_1d",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></p></center>",
+                pertanyaan: `
+                <p>Jawaban Yang kamu pilih:<center>
+                <br> <strong>Data       :</strong> Daftar Tinggi Badan Siswa Kelas  A <br> 
+                <strong>Informasi       :</strong> Rata Rata Tinggi Badan Siswa Kelas B <br></center> <br>
+                
+                Sebenarnya Data-Data Tinggi Badan Memang Bisa Memberikan Informasi Berupa Rata Rata Tinggi Bandan, 
+                Namun Jika Diperhatikan Lagi Data Disini Adalah  Dari Kelas A Tapi Informasinya Malah Mengenai Siswa Kelas B.
+                <br><br>Informasi Mengenai Siswa Kelas B Tidak Akan Bisa Didapatkan Dari Data Siswa Kelas A. Sehingga Pasangan Data Dan Informasi ini Belum Tepat.</p> `,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_1" }
+                }
+            },
+            {
+                id: "frame_1e",
+                informasi: "",
+                pertanyaan: `
+                        <center><p><strong>PERTANYAAN</strong></p></center>
+                           <p> Data dan Informasi adalah hal yang berkaitan, Pasangan Data dan Informasi yang tepat adalah ........</p>
+                    `,
+                pilihan: {
+                    a: {
+                        text: `
+                        <strong>Data      :</strong> Daftar Berat Badan Siswa Kelas A<br> 
+                        <strong>Informasi :</strong> Daftar Tinggi Badan Siswa Kelas A`, next: "frame_1b"
+                    },
+                    b: {
+                        text: `
+                        <strong>Data      :</strong> Daftar Nilai UTS Matematika Siswa Kelas B<br> 
+                        <strong>Informasi :</strong> Nilai UTS Matematika Tertinggi dikelas B adalah Oji dengan nilai 90 `, correct: true, next: "frame_1k"
+                    },
+                    c: {
+                        text: ` 
+                        <strong>Data      :</strong> Daftar Harga Sayuran <br> 
+                        <strong>Informasi :</strong> Harga Susu Menjadi Murah karena overproduksi di Peternakan  `, next: "frame_1c"
+                    },
+                    D: {
+                        text: `
+                        <strong>Data      :</strong> Daftar Tinggi Badan Siswa Kelas  A <br> 
+                        <strong>Informasi :</strong> Rata Rata Tinggi Badan Siswa Kelas B  `, next: "frame_1d"
+                    }
+                }
+            },
+
+            {
+                id: "frame_2",
+                informasi: ` 
+                Frame   2
+                <center><p><strong>INFORMASI</strong></p></center>
+                <center><p><strong> Keamanan Data dan Informasi </strong></p></center>
+                    <p> </p>
+                    <p> Keamanan data dan informasi merujuk pada upaya melindungi data dari ancaman yang dapat menyebabkan kebocoran, perubahan, kehilangan, atau penyalahgunaan. 
+                        Menurut ISO/IEC 27001, keamanan informasi adalah upaya untuk menjaga tiga aspek yang mendasari Keamanan Data dan Informasi itu sendiri. Ketiga aspek in dikenal sebagai prinsip CIA : </p>
+                        <ol>    
+                                <li><b>Confidentiality (Kerahasiaan) </b> 
+                                    <dl>     Memastikan bahwa data hanya dapat diakses oleh pihak yang berwenang. Data dan Informasi tidak semuanya ditujukan untuk umum , ada juga informasi yang harus tidak boleh dikarahui sembarangan orang seperti data pribadi. </dl></li>
+                                <li><b>Integrity (Integritas)</b> 
+                                    <dl>     Memastikan bahwa data  tidak diubah secara tidak sah, baik sengaja maupun tidak sengaja. hal ini diperlukan untuk memastikan bahwa data atu informasi yang disimpan/diberikan/dimiliki adalah Asli, Akurat dan dapat dipertanggungjawabkan bila diperlukan. </dl></li>
+                                <li><b>Availability (Ketersediaan)</b>
+                                    <dl>     Memastikan bahwa data tersedia dan dapat diakses kapan saja ketika dibutuhkan oleh pihak yang berwenang. Data dan Informasi merupakan hal yang dapat mempengaruhi suatu keputusan dan bisa saja diperlukan disaaat mendesak. oleh karena itu langkah yang dilakukan untuk menjaga keamanan tetap harus memperhatikan aksebilitas juga </dl></li>
+                        </ol>
+                       <p> </p>
+                 <center></center>
+                    `,
+                pertanyaan: "",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_2e" }
+                }
+            },
+
+            {
+                id: "frame_2k",
+                informasi: "<center><p><strong>KAMU BENAR</strong></p></center>",
+                pertanyaan: `
+                
+                <p>Prinsip Integritas Memastikan Bahwa Data Asli, Akurat, Dan Dapat Dipertanggunjawabkan. Prinsip Integriitas Juga Memastikan Bahwa Data Tidak Diubah Tanpa Sepengetahuan Orang Yang Berhak Atas Akses Dan Kepemilikin Data Tersebut. 
+                Dengan Mencatat Setiap Transaksi Data Dan Informasi Terkait Transaksi Di Rekekningmu Dapat Diketahui Dan Dipertanggungjawabkan </p>`,
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_3" }
+                }
+            },
+            {
+                id: "frame_2b",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></center>",
+                pertanyaan: `<p>
+                
+                Jawaban Yang Kamu Pilih : <center>         
+                <br> Admin Sekolah Memastikan Server Website Sekolah Selalu Aktif Dan Tidak Down Saat Pendaftaran Ulang Siswa. <br><br></center>
+                Ini bukan Prinsip Integritas Tetapi PRINSIP KETERSEDIAAN, Yaitu Prinsip Agar Data Selalu Tersedia Dan Dapat Diakses Dapan Dan Dimanana Saja. 
+                Untuk Lebih Lengkapnya Baca Kembali Informasi Sebelumnya </p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_2" }
+                }
+            },
+            {
+                id: "frame_2c",
+                informasi: "<center><p><strong> SALAH </strong></p></center>",
+                pertanyaan: `<p>
+                Jawaban Yang Kamu Pilih : <center>         
+                <br> Untuk Membuka HP Perlu Memasukan Password Yang Hanya Diketahui Pemiliknya </center> <br><br>
+                Ini Bukan Prinsip Integritas Tapi PRINSIP KERAHASIAAN, Yaitu Prinsip yang memastikan bahwa hanya orang yang berwenang 
+                saja yang dapat mengeatahui data atau informasi tertenu. Untuk Lebih Lengkapnya Baca Kembali Informasi Sebelumnya</p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_2" }
+                }
+            },
+            {
+                id: "frame_2d",
+                informasi: "<center><p><strong>KURANG TEPAT </strong></p></center>",
+                pertanyaan: ` <p>
+                Jawaban Yang Kamu Pilih :<center>
+                 <br> Layanan Mobile Banking Tersedia 24 jam.</center> <br><br>
+                Ini bukan Prinsip Integritas Tetapi PRINSIP KETERSEDIAAN, Yaitu prinsip agar data selalu tersedia dan dapat diakses kapan dan dimanana saja. 
+                Untuk Lebih Lengkapnya Baca Kembali Informasi Sebelumnya </p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_2" }
+                }
+            },
+            {
+                id: "frame_2e",
+                informasi: "",
+                pertanyaan: `
+                        <center><p><strong>PERTANYAAN</strong></p></center>
+                           <p> Contoh Dari Implementasi dari Prinsip Integritas pada keamanan data dan informasi adalah  ........</p>
+                    `,
+                pilihan: {
+                    a: {
+                        text: `Aplikasi M-Bangking Mencatat Semua Transaksi Yang Kamu Lakukan Dengan Lengkap. `, correct: true, next: "frame_2k"
+                    },
+                    b: {
+                        text: `Admin sekolah memastikan server website sekolah selalu aktif dan tidak down saat pendaftaran ulang siswa.`, next: "frame_2b"
+                    },
+                    c: {
+                        text: `Untuk Membuka HP Perlu Memasukan Password Yang Hanya Diketahui Pemiliknya. `, next: "frame_2c"
+                    },
+                    D: {
+                        text: `Layanan Mobile Banking Tersedia 24 jam.`, next: "frame_2d"
+                    }
+                }
+            },
+
+            {
+                id: "frame_3",
+                informasi: ` 
+                Frame   3
+                <center><p><strong>INFORMASI</strong></p></center>
+                <center><p><strong> Data Pribadi </strong></p></center>
+                    <p> </p>
+                    <p> Menjaga keamanan data dan informasi bukanlah hal yang harus dilakukan oleh organisasi atau perusahaan saja. Kita semua punya kewajiban untuk menjaga data pribadi kita masing masing.
+                        Karena dalam era digital saat ini, data pribadi  menjadi salah satu aset yang hal  yang penting. </p> 
+                     <p> </p>   
+                        Data pribadi adalah informasi yang dapat digunakan untuk mengidentifikasi 
+                        seseorang secara langsung maupun tidak langsung. Menurut Undang-Undang Republik Indonesia Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi, data pribadi didefinisikan sebagai 
+                        data tentang seseorang yang teridentifikasi atau dapat diidentifikasi secara tersendiri atau dikombinasikan dengan informasi lainnya, baik secara langsung maupun tidak langsung. </p>
+                    <p> </p>
+                       <p> Menjaga data pribadi merupakan bagian dari tanggung jawab kita sebagai pengguna teknologi informasi yang bijak. selain itu menjaga data pribadi dilakukan 
+                        agar identitas kita tidak disalahgunakan oleh orang yang tidak bertanggung jawab. Data Pribadi mencakup Nama Lengkap, Alamat Rumah, Tempat Tanggal Lahir, Nomor Telepon, Data Biometrik dan sebaginya.
+                        data-data tersebut harus dijaga dengan baik. </p>
+                 <center></center>
+                    `,
+                pertanyaan: "",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_3e" }
+                }
+            },
+            {
+                id: "frame_3k",
+                informasi: "<center><p><strong>KAMU BENAR</strong></p></center>",
+                pertanyaan: "<p>Nama Lengkap Gubernur Bukan Data Pribadi Yang Harus Dilindungi lagi karena Justru Mereka Tokoh Publik Dan Nama Mereka Adalah Data Umum </p>",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_4" }
+                }
+            },
+            {
+                id: "frame_3b",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></p></center>",
+                pertanyaan: `</p>
+                Jawaban Yang Kamu Pilih : <center>         
+                <br> Nomor Telepon Pribadi  <br><br></center>
+                Data ini adalah data yang harus kamu lindungi karena dapat digunakan untuk menentukan identitasmu dan jika tidak dilindungi  nomor teleponmu 
+                justru bisa dimanfaatkan oleh pihak tidak bertangggun jawab untuk kejahatan</p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_3" }
+                }
+            },
+            {
+                id: "frame_3c",
+                informasi: "<center><p><strong> SALAH </strong></p></center>",
+                pertanyaan: `<p>
+                Jawaban Yang Kamu Pilih : <center>         
+                <br> Data Biometrik</center> <br>
+                Data Biometrik adalah data yang sangat sensitif karena data ini adalah data yang ada pada tubuhmu sendiri
+                apalagi data Biometirk itu biasanya benar benar hanya milikmu, seperti Sidik Jari dan data Retina Matamu</p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_3" }
+                }
+            },
+            {
+                id: "frame_3d",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></p></center>",
+                pertanyaan: ` <p>
+                Jawaban Yang Kamu Pilih :<center>
+                 <br>Alamat Tempat Tinggalmu.</center> <br>
+                Alamat Tempat Tinggal mungkin sadar atau tidak sadar kita beritahukan ke Teman kita, ke Guru Kita, dan yang paling sering saat ini dibertahukan ke Kurir paket kita.
+                Walau begitu data ini tetaplah data pribadi karena dapat digunakan untuk menentukan identitasmu baik langsung maupun tidak langsung serta
+                tidak sembarangan orang yang boleh mengetahui data ini.</p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_3" }
+                }
+            },
+            {
+                id: "frame_3e",
+                informasi: "",
+                pertanyaan: `
+                        <center><p><strong>PERTANYAAN</strong></p></center>
+                           <p> Berikut adalah data pribadi yang harus dilindungi, Kecuali ........</p>
+                    `,
+                pilihan: {
+                    a: {
+                        text: ` Nomor Telepon Pribadi 
+                        `, next: "frame_3b"
+                    },
+                    b: {
+                        text: ` Alamat Tempat Tinggalmu
+                        `, next: "frame_3d"
+
+                    },
+                    c: {
+                        text: ` Data Biometrik
+                        `, next: "frame_3c"
+                    },
+                    D: {
+                        text: ` Nama Lengkap Gubernur
+                        `, correct: true, next: "frame_3k"
+                    }
+                }
+            },
+
+            {
+                id: "frame_4",
+                informasi: ` 
+                Frame   4
+                <center><p><strong>INFORMASI</strong></p></center>
+                <center><p><strong> Ancaman Terhadap Keamanan Data Dan Informasi </strong></p></center>
+                    <p> </p>
+                    <p> Saat ini , kita menggunakan internet dalam hampir segala hal. hampir seluruh aktivitas kita tidak dapat dipisahkan dari Internet. Dengan Memanfaatkan Keberadaan Internet Banyak Aktivitas menjadi lebih cepat dan Mudah.
+                        contohnya adalah aplikasi chatting seperti WA yang memeudahkan komunikasi jarak jauh, Artikel Berita yang selalu Up To Date. Belanja Online Dan Sebgainya. Dibalik kemudahan itu juga, kita harus berhati hati karena ada banyak sekali
+                        Ancaman yang menyertainya terutama terhadap keamanan data dan informasi pribadi kita semua. </p>
+                    <p> </p>
+                        Beberapa jenis ancaman yang mengancam keamanan data dan informasi adalah:
+                        <ol>    
+                            <li>Hacker (Peretas)
+                                <dl>Hacker adalah Individu atau bisa juga kelompok yang melakukan Membobol atau Mengakses Suatu sistem komputer, jaringan, atau data Secara Tidak Sah. Merekan biasanya mencuri Data ata Informasi Penting dari Dalam Sistem yang sudah mereka masuki</dl></li>
+                            <li>Phishing 
+                                <dl>Phishing adalah metode penipuan yang menggunakan pesan palsu untuk mengelabui korban agar Memberikan Informasi Pribadi Seperti Nomor PIN Rekening dan Nomor Kartu kredit.</dl></li>
+                            <li> Malware (Malicious Software)
+                                <dl> Malware adalah perangkat lunak berbahaya yang dirancang untuk menginfeksi, merusak, atau mencuri data dari komputer atau perangkat sejenisnya. Ada Banyak Jenis Malware, Diantaranya:
+                                    <ul> 
+                                        <li>Virus
+                                        <dl> Program Jahat yang biasanya menduplikasi diri saat program dijalankan secara sadar ataupun tidak sadar oleh pengguna.</dl></li>
+                                        <li>Worm
+                                        <dl> Program jahat yang menyebar sendiri melalui jaringan tanpa bantuan pengguna. jika tidak diatasi Dapat memperlambat kinerja sistem kompuer.</dl></li>
+                                        <li>Trojan Horse
+                                        <dl> Program Jahat yang menyamar sebagai perangkat lunak yang sah untuk menipu pengguna agar mengunduh, menginstal, atau menjalankan kode berbahaya</dl></li>
+                                        <li>Ransomware
+                                        <dl> Program Jahat yang digunakan hacker untuk mengunci atau mengenkripsi data pengguna, kemudian menuntut tebusan untuk memulihkan akses ke data tersebut.</dl></li>
+                                        <li>Spyware
+                                        <dl> Program Jahat yang Mengumpulkan informasi pengguna tanpa sepengetahuan, seperti kebiasaan browsing atau data login..</dl></li>
+                                    </ul>
+                                </dl></li>
+                        </ol>
+                    `,
+                pertanyaan: "",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_4e" }
+                }
+            },
+            {
+                id: "frame_4k",
+                informasi: "<center><p><strong>KAMU BENAR</strong></p></center>",
+                pertanyaan: "</p> Ransomware adalah program jahat yang digunakan oleh individu maupun kelompok hacker untuk mengunci data atau informasi milkmu, dan untuk Membukanya mereka akan meminta tebusan </p>",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_5" }
+                }
+            },
+            {
+                id: "frame_4b",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></center>",
+                pertanyaan: `<p>
+                Jawaban Yang Kamu Pilih : <center>          
+                <br> Aldi menerima email yang tampak seperti dari bank. Email itu meminta Aldi mengklik tautan dan mengisi data rekening. Ternyata itu email palsu, dan datanya dicuri oleh penipu.  </center> <br>
+                 Contoh ini bukanlah Contoh Kasus Ransomware Tetapi Kasus Phising. </p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_4" }
+                }
+            },
+            {
+                id: "frame_4c",
+                informasi: "<center><p><strong> SALAH </strong></p></center>",
+                pertanyaan: `<p>
+                Jawaban Yang Kamu Pilih : <center>         
+                <br> Sinta Menginstal Aplikasi Bajakan, sejak aplikasi terisntal dia tidak sadar bahwa semua aktivitas komputernya termasuk password login akun media sosialnya.  </center> <br>
+                 Contoh ini bukanlah Contoh Kasus Ransomware Tetapi Kasus Spyware. </p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_4" }
+                }
+            },
+            {
+                id: "frame_4d",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></p></center>",
+                pertanyaan: ` <p>
+                Jawaban Yang Kamu Pilih :<center>
+                <br> Fajar mengklik iklan “Anda memenangkan hadiah!” di hpnya. Tidak ada masalah langsung tapi hpnya jadi lebih lemot dan suka muncul iklan yang tiba tiba memenuhi layarnya </center> <br>
+                 Contoh ini bukanlah Contoh Kasus Ransomware Tetapi Kasus yang disebabkan oleh virus.</p> `,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_4" }
+                }
+            },
+            {
+                id: "frame_4e",
+                informasi: "",
+                pertanyaan: `
+                        <center><p><strong>PERTANYAAN</strong></p></center>
+                            <p>Kasus yang disebabakan Perangkat Jahat Ransomware adalah yang ditunjukan oleh contoh........</p>
+                    `,
+                pilihan: {
+                    a: {
+                        text: `Aldi menerima email yang tampak seperti dari bank. Email itu meminta Aldi mengklik tautan dan mengisi data rekening. Ternyata itu email palsu, dan datanya dicuri oleh penipu.
+                        `, next: "frame_4b"
+                    },
+                    b: {
+                        text: ` Fajar mengklik iklan “Anda memenangkan hadiah!” di hpnya. Tidak ada masalah langsung tapi hpnya jadi lebih lemot dan suka muncul iklan yang tiba tiba 
+                        `, next: "frame_4d"
+                    },
+                    c: {
+                        text: ` Sinta Menginstal Aplikasi Bajakan, sejak aplikasi terisntal dia tidak sadar bahwa semua aktivitas komputernya termasuk password login akun media sosialnya.
+                        `, next: "frame_4c"
+                    },
+                    D: {
+                        text: ` Pak Guru menyimpan seluruh data ujian siswa di laptop. Tiba-tiba semua file berubah menjadi simbol aneh dan muncul pesan: “Kirim 5jt Kesini jika ingin file kembali. 
+                        `, correct: true, next: "frame_4k"
+                    }
+                }
+            },
+
+
+            {
+                id: "frame_5",
+                informasi: ` 
+                Frame   5
+                <center><p><strong>INFORMASI</strong></p></center>
+                <center><p><strong> Cara Menjaga Kemanan Data dan Informasi </strong></p></center>
+                    <p> </p>
+                    <p> Menjaga keamanan data dan informasi dari ancaman - ancaman adalah hal yang harus kita lakukan. ada berbagai cara dan alat yang dapat digunakan untuk melindungi kemanan data dan informasi yaitu: </p>
+                        <ol>  
+
+                            <li> Selalu Waspada  dan Bijak Dalam Menggunakan Internet
+                                <dl> Saat menggunakan Internet adalah saat paling rentan bagi data dan informasi kita dapat dicuri. karena terkadang kita tidak menyadari bahwa hal hal yang kita lakukan di internet
+                                    dapat menjadi masalah serius bagi keamanan data. Misalnya: Mendownload aplikasi bajakan yang ternyata membawa malware, Asal Menekan link iklan, dan membuka sistus yang tidak memenuhi protokol keamanan. </dl>
+                            
+                            <li> Melakukan Backup Data
+                                    <dl> 
+                                    Ketersediaan data merupakan aspek dalam keamanan data dan informasi. serangan dari program ransomware atau pun hal lain dapat menganjcam aspek ini. oleh karena itu dengan melakukan back up data secara rutin
+                                    dapat mencegah atau meminimalisir data yang tidak dpat diambil/diakses saat diperlukan.
+                                   </dl>    
+
+                            <li>Menggunakan Antivirus 
+                                <dl> Walaupun kita sudah berhati-hati terkadang ada saja virus atau program jahat lain yang menyerang perangkat komputer kita, seperti yang sudah dijelaskan juga bahwa hal ini sangat mengancam 
+                                    keamanan data dan informasi kita. oleh karena itu dipasangnya antivirus akan memberikan perlindungan ekstra pada perangkat kita. karena aktivirus akan mencegah virus masuk, mendeteksi program yang dicurigai sebagai virus di komputer, 
+                                    dan menghapus virus tersebut atau mengkarantinanya agar tidak menyebar.</dl>
+
+                            <li>Menggunakan Authentikasi 2 faktor     
+                                <dl> Authentikasi adalah metode untuk memverifikasi keaslian objek atau identitas. dalam authentikasi terdapat 3 faktor yang menjadi acuan dalam melakukan verifikasi, Yaitu : 
+                                   <ol> 
+                                        <li>Hal Yang Kamu Ketahui </li>
+                                            <dl> Contohnya adalah Sandi Akun IG, Pin ATM, dan  Pola Untuk Membuka Hp dan lain lain </dl>
+                                        <li>Hal Yang Kamu Miliki, Biasanya hal fisik </li>
+                                            <dl> Contohnya adalah Kartu ATM, KTP,Ponsel,Nomor Telepon dan lain lain </dl>
+                                        <li>Hal Bawaan Yang Kamu Miliki (BIOMETRIK) </li>
+                                             <dl>Contohnya adalah Sidik Jari, Data Retina, Suara dan lain lain</dl>
+                                    </o>
+                                </dl></li>
+                                <dl> Dengan menggunakan Authentikasi 2 faktor, Maka proses verifikasi Identitas Lebih Ketat dan Data Pribadi Lebih Terjaga. <d/l>
+                        
+                            
+                        </ol>
+                    <p></p>
+                 <center></center>
+                    `,
+                pertanyaan: "",
+                pilihan: {
+                    ulangi: { text: "Lanjutkan", next: "frame_5e" }
+                }
+            },
+
+            {
+                id: "frame_5b",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></center>",
+                pertanyaan: `<p>
+                Jawaban Yang Kamu Pilih : <center>          
+                <br> Tidak Mengunakan Antivirus Karena Membuat Komputer Berat.  </center> <br><br>
+                 Yang Ditunjukan  oleh tindakan ini Bukanlah tindakan yang mencerminkan Langkah untuk melindungi data. 
+                 Karena dengan tidak meemasang antivirus justru perangkat komputermu akan lebih mudah diserang virus.
+                 mungkin kamu masih perlu membaca lagi informasi yang diberikan.</p> `,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_5" }
+
+                }
+            },
+            {
+                id: "frame_5c",
+                informasi: "<center><p><strong> SALAH </strong></p></center>",
+                pertanyaan: `<p>
+                Jawaban Yang Kamu Pilih : <center>         
+                <br> Memberitahukan PIN ATM Kepada Teman mu. </center> <br><br>
+                 PIN ATM adalah data yang digunakan untuk memverifikasi bahwa kamulah yang mengambil uang tersebut. jika 
+                 kamu memberi tahu temanmu PIN ATM mu, maka keamanan rekekeningmu mungkin sudah semakin terancam karena 
+                 Jika dia mencuri kartu ATM mu maka dia dapat menguras isi Rekeningmu.</p>`,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_5" }
+                }
+            },
+            {
+                id: "frame_5d",
+                informasi: "<center><p><strong>KURANG TEPAT</strong></p></center>",
+                pertanyaan: ` <p>
+                Jawaban Yang Kamu Pilih :<center>
+                <br> Membeberkan Foto KTP Lengkap Di Media Sosialmu.  </center> <br><br>
+                 KTP adalah sesuatu yang tidak boleh ditunjukan sembarngan. Karena dalam KTP tertulis Identitasmu secara lengkap
+                 Dengan membeberkan Isi KTP sepenuhnya, Bukannya melindungi data justu kamu telah Membuka Data Pribadimu Sendiri 
+                 untuk digunakan oleh orang yang tidak bertanggun Jawab </p> `,
+                pilihan: {
+                    ulangi: { text: "Baca Kembali Materi", next: "frame_5" }
+                }
+            },
+            {
+                id: "frame_5e",
+                informasi: "",
+                pertanyaan: `
+                        <center><p><strong>PERTANYAAN</strong></p></center>
+                            Langkah Untuk Melindungi Keamanan Data dan informasi ditujukan oleh Tindakan ........
+                    `,
+                pilihan: {
+                    a: {
+                        text: ` Tidak Mengunakan Antivirus Karena Membuat Komputer Berat.   
+                        `, next: "frame_5b"
+                    },
+                    b: {
+                        text: ` Memberitahukan PIN ATM Kepada Teman mu.
+                        `, next: "frame_5d"
+                    },
+                    c: {
+                        text: ` Melakukan Pencadangan Data-Data Penting Di Laptopmu.
+                        `, correct: true, next: "frame_5k"
+                    },
+                    D: {
+                        text: ` Membeberkan Foto KTP Lengkap Di Media Sosialmu.
+                        `, next: "frame_5c"
+                    }
+                }
+            },
+            {
+                id: "frame_5k",
+                informasi: "<center> <h3> SELAMAT!</h3>  JAWABANMU BENAR <br> DAN KAMU SUDAH MENYELESAIKAN SEMUA FRAME  </center>",
+                pertanyaan: `
+                <p>Jawaban Yang Kamu Pilih :
+                <br> <center> Melakukan Pencadangan Data Data Penting  </center> <br><br>
+                 Dengan Melakukan Pendangan Data Kamu telah menjaga keamanan data dan infomasi. Karena dengan membuat cadangan data .
+                 Jika terjadi masalah seperti diserang ransomware atau penyimpanan data asli mengalami kerusakan. masih bisa menggunakan
+                 cadangan data yang sudah dibuat <Br><Br></p>
+                <center> <p> Silahkan Klik Tombol Di Bawah Ini Untuk Melihat Performa Dan Menyelesaikan Program </p> </center>`,
+                pilihan: {
+                    selesai: { text: "Selesai", next: "frameAkhir" }
+                }
+            },
+            {
+                id: "frameAkhir",
+                informasi: "",
+                pertanyaan: "",
+                pilihan: {}
+            }
+
+
+        ];
+
+        function renderFrame(frameId) {
+            if (frameStartTime > 0 && currentFrameId) {
+                const now = Date.now();
+                const duration = Math.floor((now - frameStartTime) / 1000);
+                frameTimes[currentFrameId] = duration;
+            }
+
+
+            frameStartTime = Date.now();
+            currentFrameId = frameId;
+
+            updateProgress(frameId);
+            const frame = soal.find(f => f.id === frameId);
+            if (!frame) return;
+            if (frameId === 'frameAkhir') {
+                if (timerInterval) {
+                    clearInterval(timerInterval);
+                }
+                document.getElementById('containerUtama').style.display = 'none';
+
+
+                const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+                const seconds = String(totalSeconds % 60).padStart(2, '0');
+
+                let waktuLabel = "<h3>KERJA BAGUS !<h3> Kamu Telah Belajar Lebih Dari 10 Menit Hari Ini Dan Menyelesaikan Program Ini Dengan Sungguh Sungguh";
+                if (totalSeconds <= 180) waktuLabel = "<h3>LUAR BIASA ! </h3> Kamu Menyelesaikan Pembelajaran ini dibawah 3 menit";
+                else if (totalSeconds <= 360) waktuLabel = "<h3> HEBAT ! </h3> Kamu Telah Menyelesaikan pembelajaran ini dibawah 6 menit ";
+                else if (totalSeconds <= 600) waktuLabel = " <h3> BAGUS !</h3> <br> Kamu Telah Menyelsaikan Pembelajaran Kurang dari 10 menit ";
+
+
+                let hasilLabel = "<h3> ............... </h3> Apakah Kamu Sedang Sakit Atau Memang Bercanda ? ";
+                if (wrongCount === 0) hasilLabel = "<h3> SEMPURNA ! </h3> Tidak Ada Kesalahan Sama Sekali Dalam Semua Jawabanmu ";
+                else if (wrongCount <= 2) hasilLabel = "<h3> HEBAT ! </h3> Tingkat Ketepatan Jawabanmu Sangat Tinggi Dalam Program Ini";
+                else if (wrongCount <= 10) hasilLabel = "<h3> CUKUP BAGUS ! </h3> Kamu Mampu Menyelesaikan Pembelajaran Walau Salah Beberapa Kali";
+
+
+                const akhirHTML = `
+                <div class="container" id="containerAkhir">
+                        <div class="section-box3">
+                        <center>
+                            <h2> SELAMAT </h2>
+                                <p> Kamu Telah Menyelesaikannya Program Pembelajaran ! <br> Sekarang saatnya melihat bagaimana performamu secara keseluruhan dalam pembelajaran kali ini.</p>
+                            </center><br>
+                            </div>
+                        <div class="section-box3">
+                            <center> <h3> Performa Belajarmu Dalam Program Ini </h3>  </center>
+                        </div>
+
+                        <div class="section-box">
+                                <div class="section-box-item">
+                                   <p style="font-size: 35px;">🕛 </p>
+                                   Waktu Penyelesaian Program : 
+                                   <h3 style="color: green;"> ${minutes} Menit ${seconds} Detik </h3>
+                                   <p> ${waktuLabel}</p>
+                                </div>
+                                
+                                <div class="section-box-item">
+                                    <p style="font-size: 35px;">❌</p>
+                                    Kesalahan   : 
+                                   <h3 style="color: red;">${wrongCount}</h3> 
+                                   <p> ${hasilLabel}</p>
+                                </div>
+                        </div>
+                        
+
+                        <div class="section-box3">
+                                <center>
+                                    <h2>PENUTUP</h2>
+                                </center>
+                                    <p>
+                                     Dari Semua Frame Yang Telah Dilalui, Secara Garis Besar Poin Poin Penting dari materi yang dibahas kali ini, yaitu:
+                                     <ul>
+                                        <li> Data Adalah Fakta Mentah Dan Informasi Adalah hasil dari pemrosesan Data tersebut</li>
+                                        <li> Terdapat 3 Asas yang mendasari keamanan data dan informasi Yaitu Kerahasiaan, Ketersediaan dan,Integritas Data. </li>
+                                        <li> Data Pribadi Adalah Data Yang Harus Dilindungi Oleh Masing masing Individu</li>
+                                        <li> Ancaman Pada keamanan data dan informasi adalah Peretasan, Phising, dan Malware</li>
+                                        <li> Program Jahat Yang Dapat mengancam keamanan data dan Informasi adalah Spyware,Ransomware,dan Trojan Horse </li>
+                                        <li> Untuk Melindungi Keamanan data dan Informasi dapat dilakukan dengan cara  Melakukan back Up data, Menggunakan Anti-virus, Bijak Saat Menggunakan Internet Dan Menggunakan Metode Authentikasi 2 faktor</li> 
+                                        <li> Faktor Authentikasi dibagi menjadi 3, yaitu hal yang diketahui,  hal yang dimiliki, dan  Hal Biometrik </li>
+                                     </ul>
+                                    </p>
+
+                                    <p> Setelah Kamu Menyelesaikan Program Ini, Diharapkan Kamu Memahami Berbagai Hal Terkait Keamanan Data dan Informasi dan menerapkan Pemahaman yang sudah kamu dapatkan Dalam Melindungi data Pribadimu.</p>
+                                    <center>
+                                        <p> Jika Kamu Ingin Mencoba Kembali Program Ini Silahkan Untuk Merefresh halaman ini.</p>
+                                        <p> jika ingin mengakhiri Program Ini silahkan untuk Menutup Program.</p>
+                                        </center>
+                                 </div>
+                        </div>
+                </div>               
+                `;
+
+                document.body.insertAdjacentHTML('beforeend', akhirHTML);
+                return;
+            }
+
+
+
+
+            const app = document.getElementById("app");
+
+            let waktuSebelumnyaHTML = '';
+            if (frameId.includes('k')) {
+
+                const allPreviousTimes = Object.entries(frameTimes)
+                    .filter(([id, _]) => !id.includes('k') && !id.includes('feedback'))
+                    .map(([_, time]) => time);
+
+
+                if (allPreviousTimes.length > 0) {
+                    const totalWaktuSebelumnya = allPreviousTimes.reduce((acc, cur) => acc + cur, 0);
+                    const menit = Math.floor(totalWaktuSebelumnya / 60);
+                    const detik = totalWaktuSebelumnya % 60;
+
+                    let WaktuPerFrame;
+                    if (totalWaktuSebelumnya <= 60) WaktuPerFrame = `<strong>SUPER DUPER CEPAT</strong>`;
+
+
+                    waktuSebelumnyaHTML = `
+                      <div class="alasan-container">
+                            <center>  Waktu Pengerjaan Dari Frame Informasi Sampai Frame Ini Adalah : <br> <strong>${menit} menit ${detik} detik</strong><br><br> ${WaktuPerFrame}</center>
+                     </div>
+                      `;
+
+                    frameTimes = {};
+                }
+            }
+
+
+
+
+
+
+            const isFeedback = ['b', 'c', 'd'].some(char => frameId.includes(char));
+            const isAkhir = frameId === 'frameAkhir';
+            const infoClass = isFeedback ? 'feedback' : frameId.includes('k') ? 'correct' : '';
+
+
+            const pilihanHTML = Object.entries(frame.pilihan).map(([key, value]) => {
+                if (["ulangi", "selesai", "mulai"].includes(key)) {
+                    return `<button class='btn' onclick="renderFrame('${value.next}')">${value.text}</button>`;
+                } else {
+                    return `<label><input type="radio" name="jawaban" value="${key}" /> ${value.text}</label>`;
+                }
+            }).join('');
+
+            const submitButton = Object.keys(frame.pilihan).some(k => !['ulangi', 'Lanjutkan', 'selesai', 'mulai'].includes(k))
+                ? `<button class="btn" onclick="submitAnswer('${frameId}')">Submit</button>`
+                : '';
+
+            app.innerHTML = `${isFeedback ? `<div class="informasi-text feedback"> ${frame.informasi} </div>`
+                : `<div class="informasi-container informasi-text ${infoClass}">${frame.informasi}</div>`}
+                            ${isFeedback && frame.pertanyaan ? `<div class="alasan-container">${frame.pertanyaan}</div>`
+                    : frame.pertanyaan ? `<div class="pertanyaan-container question-text">${frame.pertanyaan}</div>`
+                        : ''}
+                        ${waktuSebelumnyaHTML} 
+                            <div class="choices">${pilihanHTML}</div>
+                                ${submitButton} `;
+
+
+        }
+
+        function submitAnswer(currentFrameId) {
+            const jawaban = document.querySelector('input[name="jawaban"]:checked');
+            if (!jawaban) return alert("Kamu Belum Memilih Opsi Jawaban! Silakan Pilih Jawaban Terlebih Dahulu.");
+
+            const selected = jawaban.value;
+            const frame = soal.find(f => f.id === currentFrameId);
+            const selectedOption = frame.pilihan[selected];
+
+            if (selectedOption.correct) {
+                correctCount++;
+                document.getElementById("correctCount").textContent = correctCount;
+            } else {
+                wrongCount++;
+                document.getElementById("wrongCount").textContent = wrongCount;
+            }
+            const feedbackDiv = selectedOption.feedback ? `<div class='feedback'>${selectedOption.feedback}</div>` : '';
+            const nextId = selectedOption.next;
+            app.innerHTML += feedbackDiv;
+            setTimeout(() => renderFrame(nextId), 0);
+        }
+        function updateProgress(currentFrameId) {
+            const totalFrames = soal.filter(f =>
+                Object.keys(f.pilihan).some(k =>
+                    !["Ulangi", "Lanjutkan", "Selesai", "Mulai"].includes(k)
+                )
+            ).length;
+
+            const percent = Math.min(100, Math.round((correctCount / 5) * 100));
+            const bar = document.getElementById("progressBar");
+            if (bar) { bar.style.width = percent + "%"; }
+        }
+
+
+    </script>
+</body>
+
+</html>
