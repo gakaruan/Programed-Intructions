@@ -1100,11 +1100,20 @@
         ];
 
         function renderFrame(frameId) {
+            const previousFrameId = currentFrameId;
+            currentFrameId = frameId;
+
             if (frameStartTime > 0 && currentFrameId) {
                 const now = Date.now();
                 const duration = Math.floor((now - frameStartTime) / 1000);
-                frameTimes[currentFrameId] = duration;
+
+                if (frameTimes[currentFrameId]) {
+                    frameTimes[currentFrameId] += duration;
+                } else {
+                    frameTimes[currentFrameId] = duration;
+                }
             }
+
 
 
             frameStartTime = Date.now();
